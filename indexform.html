@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="./test.js"></script> 
+</head>
+<body>
+    <div class="main">
+        <div>
+            <center><h1 style="align-items: center;font-family: cursive;">Registration</h1></center><br>
+           <form method="post" class="sec1">
+            <div ><b>Full Name</b><br><input class="box" id="n" type="Text" placeholder="Enter the Name"><br><br></div>
+            <div ><b>Username</b><br><input class="box" id="un" type="Text" placeholder="Enter the userName"><br><br></div>
+            <div ><b>Email</b><br><pattern><input class="box" id="em"type="Text" placeholder="Enter the Email"></pattern><br><br></div>
+            <div ><b>Phone Number</b><br><input class="box" id="pn" type="Text" placeholder="Enter the Phone Number"><br><br></div>
+            <div ><b>Password</b><br><input class="box" id="ps" type="Text" placeholder="Enter the Password"><br><br></div>
+            <div ><b>Confirm Password</b><br><input class="box" id="cp" type="Text" placeholder="Enter the Confirm password"><br><br></form>
+        </div><br><br>
+        <div style="gap:70px ;font-size:medium;padding-left: 40px;">
+            <b>Gender</b><br>
+            <input type="radio" name="gender" value="male" id="m" checked>&emsp;male
+            &emsp;<input type="radio" name="gender" value="Female"id="f">Female
+            &emsp;<input type="radio" name="gender" value="Not to say" id="n">Prefer not to say   
+        </div>
+        <div>
+            <button onClick="Validate(event)" type="button">Register</button>
+        </div>
+    </div>
+</body>
+</html>
